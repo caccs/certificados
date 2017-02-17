@@ -1,12 +1,7 @@
 #!/bin/bash
+
+# variáveis com os dados presentes no certificado
 nomes=(
-"Thiago Borges"
-"Gustavo Rodrigues"
-"Henrique Eihara"
-"Giovana Morais"
-"Guilherme Gonçalves"
-"Mateus Abreu"
-"Vinicius Yamamoto"
 );
 dia="5 a 9";
 mes="Dezembro";
@@ -17,8 +12,9 @@ dia_assinatura="01";
 mes_assinatura="Janeiro";
 ano_assinatura="2017";
 
-
+# caminho para o diretório desejado
 cd "~/Documentos/ca/certificados/semana_estudos"
+
 
 for i in ${!nomes[@]}; do
 	unzip certificado.odt -d certificado
